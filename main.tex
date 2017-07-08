@@ -1,0 +1,252 @@
+%Welcome! This is Someday's XeLaTex Template. 
+%Developer: Someday
+
+\documentclass{ctexart}
+
+%********************导言区宏包引入********************
+\usepackage{xeCJK}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{listings} %代码
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry} %页面设置
+\usepackage{fontspec}
+\usepackage{times}
+\usepackage{fancyhdr} %页眉页脚
+\pagestyle{fancy}
+\usepackage{float} %表格位置
+\usepackage{titlesec}
+%********************导言区宏包引入********************
+
+%********************第三方字体引入********************
+\setCJKmainfont[BoldFont=simhei.ttf,ItalicFont=simkai.ttf]{simsun.ttc}
+\setmainfont{Times New Roman.ttf}
+\setmonofont{Courier New.tff}
+%********************第三方字体引入********************
+
+
+%********************中文字号设置********************
+%\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}
+\newcommand{\chuhao}{\fontsize{42pt}\selectfont}
+\newcommand{\xiaochuhao}{\fontsize{36pt}\selectfont}
+\newcommand{\yihao}{\fontsize{28pt}\selectfont}
+\newcommand{\erhao}{\fontsize{21pt}\selectfont}
+\newcommand{\xiaoerhao}{\fontsize{18pt}\selectfont}
+\newcommand{\sanhao}{\fontsize{15.75pt}\selectfont}
+\newcommand{\sihao}{\fontsize{14pt}\selectfont}
+\newcommand{\xiaosihao}{\fontsize{12pt}\selectfont}
+\newcommand{\wuhao}{\fontsize{10.5pt}\selectfont}
+\newcommand{\xiaowuhao}{\fontsize{9pt}\selectfont}
+\newcommand{\liuhao}{\fontsize{7.875pt}\selectfont}
+\newcommand{\qihao}{\fontsize{5.25pt}\selectfont}
+%********************中文字号设置********************
+
+
+%********************页边距设置********************
+\geometry{left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+%页边距
+%********************页边距设置********************
+
+
+%Welcome! This is Someday's XeLaTex Template. 
+%Developer: Someday（Yihang Yin,BUAA-SCSE）
+
+
+\begin{document}
+
+%********************页眉页脚设置********************
+\lhead{}%设置左页眉为空
+\rhead{}%设置左页眉为空
+%********************页眉页脚设置********************
+
+
+%********************标题格式设置********************
+\setcounter{secnumdepth}{0}%该命令取消了章标题前数字label
+%********************标题格式设置********************
+
+%\setcounter{section}{-3}  %标题计数器
+%\stepcounter{section}
+
+
+
+
+%********************封面部分********************
+\includegraphics[scale=1]{include_picture/xiaohui.png}
+%格式控制部分
+\ \\ 
+\ \\
+\ \\
+\begin{center}
+\includegraphics[scale=1]{include_picture/xiaoming.png}
+\end{center}
+%格式控制部分
+\ \\
+\ \\
+\ \\
+\erhao
+\centerline{\textbf{本模板系北航计算机学院尹一航所开发}}
+%格式控制部分
+\ \\
+\centerline{本模板供所有用户免费使用，勿做商用}
+%格式控制部分
+\ \\
+\ \\
+\ \\
+\sihao
+\centerline{\textbf{学院：计算机学院}}
+\ \\
+\centerline{\textbf{本模板作者：尹一航}}
+\ \\
+\centerline{\textbf{联系作者：someday@buaa.edu.cn}}
+%格式控制部分
+\ \\
+\ \\ 
+\ \\
+\sanhao
+\centerline{\textbf{二〇一七年七月}}
+
+\pagenumbering{} %封面无页码
+\renewcommand{\headrulewidth}{0pt}%没有页眉装饰线
+
+
+%********************封面部分********************
+%Welcome! This is Someday's XeLaTex Template. 
+%Developer: Someday（Yihang Yin,BUAA-SCSE）
+
+
+\clearpage
+
+%********************摘要部分********************
+\pagenumbering{roman} %摘要目录页小写罗马
+
+\xiaosihao
+\section*{摘要}
+
+万万没想到。
+
+\section*{Abstract}
+lalalalala.
+%********************摘要部分********************
+
+
+%********************目录部分********************
+\clearpage
+\tableofcontents
+\clearpage
+%********************目录部分********************
+
+
+
+\renewcommand{\headrulewidth}{0.4pt} %恢复页眉装饰线
+
+%********************正文页眉部分********************
+%\lhead{} 
+\chead{本模板系北航计算机学院尹一航所开发，供所有用户免费使用，勿做商用} %设置居中页眉
+%********************正文页眉部分********************
+
+\pagenumbering{arabic} %正文页码从1开始，用阿拉伯数字
+\setcounter{page}{1} 
+
+
+\section{第一章}
+\subsection{第一节}
+
+%********************正文部分********************
+\begin{align*}
+S=\iint\limits_{\Sigma}1 \ ds &= \int_0^{\pi}d\theta \int_0^{2\pi} r^2sin(\theta) d\phi \\
+&= \int_0^{\pi}d\theta \int_0^{2\pi}\sin (\theta ) \left(\frac{1}{5} \sin (\theta  m) \sin (n \phi )+1\right)^2d\phi\\
+&=\frac{4 \sin (\pi  m) \sin ^2(\pi  n)}{5 n-5 m^2 n}-\frac{\left(8 m^2+\cos (2 \pi  m)-1\right) \sin (4 \pi  n)}{200 \left(4 m^2-1\right) n}+\frac{\pi  \left(8 m^2+\cos (2 \pi  m)-1\right)}{50 \left(4 m^2-1\right)}+4 \pi\\
+&=  \left(\frac{8 m^2}{50 \left(4 m^2-1\right)}+4\right)\pi
+\end{align*}
+%********************正文部分********************
+
+\subsection{第二节\ 对齐方式}
+
+
+%********************排版部分********************
+\begin{center} 
+居中文本第一行\\
+居中文本第二行\\
+\end{center}
+
+\begin{flushright}
+右对齐第一行\\
+右对齐第二行\\
+\end{flushright}
+
+%********************排版部分********************
+
+
+%Welcome! This is Someday's XeLaTex Template. 
+%Developer: Someday（Yihang Yin,BUAA-SCSE）
+
+
+\section{第二章}
+
+\subsection{第一节\ 图片}
+
+%********************图片部分********************
+\begin{center}
+\includegraphics[scale=0.4]{include_picture/picture.jpg}\par
+\end{center}
+%********************图片部分********************
+
+\subsection{第二节\ 引用Tex子文件}
+
+
+%********************引用Tex子文件部分********************
+\input{include_tex/include_text} %使用input不分页
+%\include{includetex} %使用include将分页
+%********************引用Tex子文件部分********************
+
+
+%\titleformat*{\subsubsection}{\scshape\MakeLowercase}
+
+
+\section{第三章}
+
+\subsection{第一节\ 表格}
+
+%********************表格部分********************
+\begin{table}[H]
+\caption{设置表格总长} 
+\begin{tabular*}{12cm}{lll}
+\hline  
+Start & End  & Character Block Name \\  
+\hline  
+3400  & 4DB5 & CJK Unified Ideographs Extension A \\  
+4E00  & 9FFF & CJK Unified Ideographs \\  
+\hline  
+\end{tabular*} 
+\end{table} 
+%********************表格部分********************
+
+\subsection{第二节}
+
+%Welcome! This is Someday's XeLaTex Template. 
+%Developer: Someday（Yihang Yin,BUAA-SCSE）
+
+
+%********************代码部分********************
+
+\clearpage
+\section{代码片}
+\lstset{language=C}
+\begin{lstlisting}
+#include<iostream>
+using namespace std;
+int main()
+{
+    return 0;
+}
+\end{lstlisting}
+
+%********************代码部分********************
+
+
+\end{document}
+
+
+%Welcome! This is Someday's XeLaTex Template. 
+%Developer: Someday（Yihang Yin,BUAA-SCSE）

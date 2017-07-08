@@ -1,0 +1,22 @@
+*****以下内容均为引用部分*****\\
+(1)解：$\because$ 根据和差化积 $\sin{\alpha}-\sin{\beta}=2\cos{\frac{\alpha+\beta}{2}}\sin{\frac{\alpha-\beta}{2}}$\\
+$\therefore \sin{\sqrt{x+k}}-\sin{\sqrt{x}}=2\cos{\frac{\sqrt{x+k}+\sqrt{x}}{2}}\sin{\frac{\sqrt{x+k}-\sqrt{x}}{2}}$\\
+$\therefore \lim\limits_{x \to +\infty}{\sin{\sqrt{x+k}}-\sin{\sqrt{x}}}
+=\lim\limits_{x \to +\infty}{2\cos{\frac{\sqrt{x+k}+\sqrt{x}}{2}}\sin{\frac{\sqrt{x+k}-\sqrt{x}}{2}}}\\
+=\lim\limits_{x \to +\infty}{cos{\frac{\sqrt{x+k}+\sqrt{x}}{2}}{\left(\sqrt{x+k}-\sqrt{x}\right)}}$\\
+又$\lim\limits_{x \to +\infty}{\sqrt{x+k}-\sqrt{x}}=0,$
+且$0\leqslant \left| \cos{\frac{\sqrt{x+k}+\sqrt{x}}{2}} \right|\leqslant 1$\\
+$\therefore \lim\limits_{x \to +\infty}{\sin{\sqrt{x+k}}-\sin{\sqrt{x}}}
+=\lim\limits_{x \to +\infty}{cos{\frac{\sqrt{x+k}+\sqrt{x}}{2}}{\left (\sqrt{x+k}-\sqrt{x}\right)}}=0$\\
+(2)解：设
+$$a_k=\begin{cases}
+b_1-b_n &k=1,\\
+b_k-b_{k-1} &2\leqslant k \leqslant n
+\end{cases}$$\\
+$\therefore$可以满足$\sum\limits_{k=1}^{n}{a_k}=0$,设定$b_0=b_n$\\
+$\therefore \lim\limits_{x\to+\infty}{\sum\limits_{k=1}^{n}{{a_k}\sin{\sqrt{x+k}}}}
+=\lim\limits_{x\to+\infty}{\sum\limits_{k=1}^{n}{{b_k-b_{k-1}}\sin{\sqrt{x+k}}}}\\
+=\lim\limits_{x\to+\infty}{-\sum\limits_{k=1}^{n-1}{b_i{\left( \sin{\sqrt{x+k+1}}-\sin{\sqrt{x+k}} \right)}}-b_n{\left( \sin{\sqrt{x+1}}-\sin{\sqrt{x+k}} \right)}}$\\
+又$\lim\limits_{x\to +\infty}{\sin{\sqrt{x+k}}-\sin{\sqrt{x}}}=0$\\
+$\therefore \lim\limits_{x\to+\infty}{\sum\limits_{k=1}^{n}{\sin{\sqrt{x+k}}}}=0$\\
+*****以上内容均为引用部分*****\\
