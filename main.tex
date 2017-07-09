@@ -1,4 +1,4 @@
-%Welcome! This is Someday's XeLaTex Template. 
+%Welcome! This is Someday's XeLaTeX Template. 
 %Developer: Someday
 
 \documentclass{ctexart}
@@ -17,12 +17,15 @@
 \pagestyle{fancy}
 \usepackage{float} %表格位置
 \usepackage{titlesec}
+\usepackage[nofonts]{ctex}
 %********************导言区宏包引入********************
 
 %********************第三方字体引入********************
-\setCJKmainfont[BoldFont=simhei.ttf,ItalicFont=simkai.ttf]{simsun.ttc}
-\setmainfont{Times New Roman.ttf}
-\setmonofont{Courier New.tff}
+\setCJKmainfont[Path=fonts/,BoldFont=simhei.ttf,ItalicFont=simkai.ttf,TypeWriterFont=simfang.ttf]{simsun.ttc}
+%中文字体涵盖黑体、宋体、楷体、仿宋
+
+\setmainfont[Path=fonts/]{Times New Roman.ttf}
+\setmonofont[Path=fonts/]{Courier New.tff}
 %********************第三方字体引入********************
 
 
@@ -49,7 +52,7 @@
 %********************页边距设置********************
 
 
-%Welcome! This is Someday's XeLaTex Template. 
+%Welcome! This is Someday's XeLaTeX Template. 
 %Developer: Someday（Yihang Yin,BUAA-SCSE）
 
 
@@ -85,7 +88,7 @@
 \ \\
 \ \\
 \erhao
-\centerline{\textbf{本模板系北航计算机学院尹一航所开发}}
+\centerline{\textbf{本模板系北航计算机学院尹一航所开发}} %黑体这样调用，其余字体同理
 %格式控制部分
 \ \\
 \centerline{本模板供所有用户免费使用，勿做商用}
@@ -111,7 +114,7 @@
 
 
 %********************封面部分********************
-%Welcome! This is Someday's XeLaTex Template. 
+%Welcome! This is Someday's XeLaTeX Template. 
 %Developer: Someday（Yihang Yin,BUAA-SCSE）
 
 
@@ -122,7 +125,6 @@
 
 \xiaosihao
 \section*{摘要}
-
 万万没想到。
 
 \section*{Abstract}
@@ -149,8 +151,11 @@ lalalalala.
 \setcounter{page}{1} 
 
 
-\section{第一章}
-\subsection{第一节}
+\section{第一章\ 公式和中文字体\ \ 和谐共处}
+
+公式和中文字体和谐共处。\\
+
+\subsection{第一节\ LaTeX公式}
 
 %********************正文部分********************
 \begin{align*}
@@ -161,7 +166,14 @@ S=\iint\limits_{\Sigma}1 \ ds &= \int_0^{\pi}d\theta \int_0^{2\pi} r^2sin(\theta
 \end{align*}
 %********************正文部分********************
 
-\subsection{第二节\ 对齐方式}
+\subsection{第二节\ 中文字体设置}
+
+默认就是宋体。\par
+调用黑体：\textbf{黑体写在这里}\par
+调用楷体：\textit{楷体写在这里}\par
+调用仿宋：\texttt{仿宋写在这里}\par
+
+\subsection{第三节\ 对齐方式}
 
 
 %********************排版部分********************
@@ -178,11 +190,13 @@ S=\iint\limits_{\Sigma}1 \ ds &= \int_0^{\pi}d\theta \int_0^{2\pi} r^2sin(\theta
 %********************排版部分********************
 
 
-%Welcome! This is Someday's XeLaTex Template. 
+%Welcome! This is Someday's XeLaTeX Template. 
 %Developer: Someday（Yihang Yin,BUAA-SCSE）
 
 
-\section{第二章}
+\section{第二章\ 图片与TeX子文件\ \ 信手拈来}
+
+图片与TeX子文件信手拈来。
 
 \subsection{第一节\ 图片}
 
@@ -204,11 +218,14 @@ S=\iint\limits_{\Sigma}1 \ ds &= \int_0^{\pi}d\theta \int_0^{2\pi} r^2sin(\theta
 %\titleformat*{\subsubsection}{\scshape\MakeLowercase}
 
 
-\section{第三章}
+\section{第三章\ 表格\ \ 提升逼格}
+
+搞科研怎么能没有表格？\\
 
 \subsection{第一节\ 表格}
 
 %********************表格部分********************
+关于表格的各种样式，请使用百度大法。\\
 \begin{table}[H]
 \caption{设置表格总长} 
 \begin{tabular*}{12cm}{lll}
@@ -222,16 +239,21 @@ Start & End  & Character Block Name \\
 \end{table} 
 %********************表格部分********************
 
-\subsection{第二节}
+\section{第四章\ 未完待续}
 
-%Welcome! This is Someday's XeLaTex Template. 
+目前该模板基本可以应付日常论文写作需要，\par
+尤其是对于我航学子，你们看看这个模板，是不是似曾相识，（尤其是能不能过冯如杯格式审查）。\par
+限于精力，更多高级功能，请待作者再择良辰，Someday有朝一日还会回来。
+
+%Welcome! This is Someday's XeLaTeX Template. 
 %Developer: Someday（Yihang Yin,BUAA-SCSE）
 
 
 %********************代码部分********************
 
 \clearpage
-\section{代码片}
+\section{第五章\ 代码片\ \ 程序员的最爱}
+代码片永远是程序员的最爱，支持语法高亮，用法不妨百度。\\
 \lstset{language=C}
 \begin{lstlisting}
 #include<iostream>
@@ -248,5 +270,5 @@ int main()
 \end{document}
 
 
-%Welcome! This is Someday's XeLaTex Template. 
+%Welcome! This is Someday's XeLaTeX Template. 
 %Developer: Someday（Yihang Yin,BUAA-SCSE）
