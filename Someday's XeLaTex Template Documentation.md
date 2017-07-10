@@ -4,7 +4,7 @@
 
 首先，如果你是初学者，不要一进来就发现是XeLaTeX而不是LaTeX，然后就匆匆离开。XeLaTeX本身就是LaTeX的一个分支，很多命令可以通用，XeLaTeX的优点是支持第三方字体。
 
-现在，欢迎你使用Someday出品的TeX模板，因为网上很多模板下载下来根本无法使用，而且最最让人头痛的就是LaTeX对中文的支持很不友好，所以我采用了XeLaTeX，因为可以导入第三方字体。然后我从头学习，从配置到尝试，自己搭建了一个模板，希望对你有帮助，有任何的Bug，及改进意见，欢迎联系作者：someday@buaa.edu.cn
+现在，欢迎你使用Someday出品的TeX模板，因为网上很多模板下载下来根本无法使用，而且最最让人头痛的就是LaTeX对中文的支持很不友好，所以我采用了XeLaTeX，因为可以导入第三方字体。然后我从头学习，从配置到尝试，自己搭建了一个模板，希望对你有帮助，有任何的Bug，及改进意见，欢迎联系作者：somedayjiayi@163.com
 
 
 
@@ -69,12 +69,13 @@ main.tex的编译结果就是main.pdf，你可以先看看自己对这个结果�
 
 1、希望这个模板能对你有帮助，作为使用或者学习的好素材。
 
-2、希望你在使用时保留main.tex前两行的注释：
+2、希望你在使用时保留main.tex的这些注释：
 
 %Welcome! This is Someday's XeLaTeX Template. 
-%Developer: Someday
+%Developer: Someday（Yihang Yin,BUAA-SCSE）
+%Any advice? Please contact: somedayjiayi@163.com
 
-尊重Someday的著作权，Someday就开放使用权~
+尊重Someday的著作权，Someday就开放使用权，如果它真的对你起了很大的帮助，可以在见到我的时候请我喝咖啡。
 
 3、记住，官方的说明文档（Documentation）永远是最好的教程。
 
