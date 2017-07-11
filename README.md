@@ -72,7 +72,7 @@ main.tex的编译结果就是main.pdf，你可以先看看自己对这个结果�
 2、希望你在使用时保留main.tex的这些注释：
 
 %Welcome! This is Someday's XeLaTeX Template. 
-%Developer: Someday（Yihang Yin,BUAA-SCSE）
+%Developer: Someday（BUAA-SCSE）
 %Any advice? Please contact: somedayjiayi@163.com
 
 尊重Someday的著作权，Someday就开放使用权，如果它真的对你起了很大的帮助，可以在见到我的时候请我喝咖啡。
