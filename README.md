@@ -10,6 +10,8 @@
 
 ![SomedayWill_QR_code](/Users/mac/Desktop/Someday XeLaTex Template/SomedayWill_QR_code.jpg)
 
+
+
 ### 可选编译方式：
 
 ####1、Sublime Text：
