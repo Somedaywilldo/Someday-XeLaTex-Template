@@ -14,15 +14,15 @@
 
 ### 可选编译方式：
 
-####1、Sublime Text：
+#### 1、Sublime Text：
 
 Someday使用的是Mac系统，Sublime Text2用Package Control安装Latextool插件后进行编译，编译模式为XeLaTeX，可以直接编译。
 
-####2、在线TeX IDE：
+#### 2、在线TeX IDE：
 
 在www.sharelatex.com网站上也可以直接编译，编译选项为XeLaTeX。
 
-####3、命令行编译：
+#### 3、命令行编译：
 
 在TeXLive2016环境下，编译命令如下：
 
@@ -159,7 +159,7 @@ main.tex的编译结果就是main.pdf，你可以先看看自己对这个结果�
 
 
 
-###UPDATE 2017.09.08
+### UPDATE 2017.09.08
 
 经123学长指正，Someday于2017.09.08进行一次重要更新，内容包括：
 
