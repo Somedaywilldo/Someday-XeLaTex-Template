@@ -8,7 +8,7 @@
 
 该模板首次发布于微信公众平台“SomedayWill”，在使用模板的过程中有任何问题、任何的Bug及改进意见，欢迎关注微信公众平台“SomedayWill”，并在后台提问，后台君就是Someday本人。
 
-![SomedayWill_QR_code](/Users/mac/Desktop/Someday XeLaTex Template/SomedayWill_QR_code.jpg)
+![SomedayWill_QR_code](SomedayWill_QR_code.jpg)
 
 
 
@@ -185,4 +185,4 @@ xelatex main.tex
 
 欢迎关注SomedayWill，和Someday本人亲切交流！
 
-![SomedayWill_introduction](/Users/mac/Desktop/Someday XeLaTex Template/SomedayWill_introduction.jpeg)
+![SomedayWill_introduction](SomedayWill_introduction.jpeg)
