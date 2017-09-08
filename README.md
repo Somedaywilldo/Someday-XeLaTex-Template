@@ -181,8 +181,3 @@ xelatex main.tex
 
 
 
-
-
-欢迎关注SomedayWill，和Someday本人亲切交流！
-
-![SomedayWill_introduction](SomedayWill_introduction.jpeg)
