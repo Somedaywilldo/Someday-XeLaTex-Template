@@ -1,9 +1,7 @@
 %Welcome! This is Someday's XeLaTeX Template. 
 %Developer: Someday（BUAA-SCSE）
 %Any advice? Please contact: somedayjiayi@163.com
-
 \documentclass{ctexart}
-
 %********************导言区宏包引入********************
 \usepackage{xeCJK}
 \usepackage{amssymb}
@@ -18,13 +16,11 @@
 \pagestyle{fancy}
 \usepackage{float} %表格位置
 \usepackage{titlesec}
-\usepackage[nofonts]{ctex}
+\usepackage{ctex}
 %********************导言区宏包引入********************
-
 %********************第三方字体引入********************
-\setCJKmainfont[Path=fonts/,BoldFont=simhei.ttf,ItalicFont=simkai.ttf,TypeWriterFont=simfang.ttf]{simsun.ttc}
+\setCJKmainfont[Path=fonts/,BoldFont=simhei.ttf,ItalicFont=simkai.ttf,SlantedFont=simfang.ttf]{simsun.ttc}
 %中文字体涵盖黑体、宋体、楷体、仿宋
-
 \setmainfont[Path=fonts/]{Times New Roman.ttf}
 \setmonofont[Path=fonts/]{Courier New.ttf}
 %********************第三方字体引入********************
@@ -32,18 +28,18 @@
 
 %********************中文字号设置********************
 %\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}
-\newcommand{\chuhao}{\fontsize{42pt}\selectfont}
-\newcommand{\xiaochuhao}{\fontsize{36pt}\selectfont}
-\newcommand{\yihao}{\fontsize{28pt}\selectfont}
-\newcommand{\erhao}{\fontsize{21pt}\selectfont}
-\newcommand{\xiaoerhao}{\fontsize{18pt}\selectfont}
-\newcommand{\sanhao}{\fontsize{15.75pt}\selectfont}
-\newcommand{\sihao}{\fontsize{14pt}\selectfont}
-\newcommand{\xiaosihao}{\fontsize{12pt}\selectfont}
-\newcommand{\wuhao}{\fontsize{10.5pt}\selectfont}
-\newcommand{\xiaowuhao}{\fontsize{9pt}\selectfont}
-\newcommand{\liuhao}{\fontsize{7.875pt}\selectfont}
-\newcommand{\qihao}{\fontsize{5.25pt}\selectfont}
+\newcommand{\chuhao}{\fontsize{42pt}{0}}
+\newcommand{\xiaochu}{\fontsize{36pt}{0}}
+\newcommand{\yihao}{\fontsize{28pt}{0}}
+\newcommand{\erhao}{\fontsize{21pt}{0}}
+\newcommand{\xiaoer}{\fontsize{18pt}{0}}
+\newcommand{\sanhao}{\fontsize{15.75pt}{0}}
+\newcommand{\sihao}{\fontsize{14pt}{0}}
+\newcommand{\xiaosi}{\fontsize{12pt}{0}}
+\newcommand{\wuhao}{\fontsize{10.5pt}{0}}
+\newcommand{\xiaowu}{\fontsize{9pt}{0}}
+\newcommand{\liuhao}{\fontsize{7.875pt}{0}}
+\newcommand{\qihao}{\fontsize{5.25pt}{0}}
 %********************中文字号设置********************
 
 
@@ -88,7 +84,7 @@
 \ \\
 \ \\
 \erhao
-\centerline{\textbf{本模板由北航计算机学院Someday开发}} %黑体这样调用，其余字体同理
+\centerline{\erhao\textbf{本模板由北航计算机学院Someday开发}} %黑体这样调用，其余字体同理
 %格式控制部分
 \ \\
 \centerline{本模板供所有用户免费使用，勿做商用}
@@ -109,20 +105,15 @@
 \sanhao
 \centerline{\textbf{二〇一七年七月}}
 
-\pagenumbering{} %封面无页码
+\pagenumbering{gobble} %封面无页码
+%\thispagestyle{empty}
+
+
 \renewcommand{\headrulewidth}{0pt}%没有页眉装饰线
-
-
-%********************封面部分********************
-%Welcome! This is Someday's XeLaTeX Template. 
-%Developer: Someday（BUAA-SCSE）
-%Any advice? Please contact: somedayjiayi@163.com
 \clearpage
-
-%********************摘要部分********************
 \pagenumbering{roman} %摘要目录页小写罗马
 
-\xiaosihao
+\xiaosi
 \section*{摘要}
 万万没想到。
 
@@ -170,7 +161,7 @@ S=\iint\limits_{\Sigma}1 \ ds &= \int_0^{\pi}d\theta \int_0^{2\pi} r^2sin(\theta
 默认就是宋体。\par
 调用黑体：\textbf{黑体写在这里}\par
 调用楷体：\textit{楷体写在这里}\par
-调用仿宋：\texttt{仿宋写在这里}\par
+调用仿宋：\textsl{仿宋写在这里}\par
 
 \subsection{第三节\ 对齐方式}
 
@@ -239,21 +230,10 @@ Start & End  & Character Block Name \\
 \end{table} 
 %********************表格部分********************
 
-\section{第四章\ 未完待续}
-
-目前该模板基本可以应付日常论文写作需要，\par
-尤其是对于我航学子，你们看看这个模板，是不是似曾相识，（尤其是能不能过冯如杯格式审查）。\par
-限于精力，更多高级功能，请待作者再择良辰，Someday有朝一日还会回来。
-
-%Welcome! This is Someday's XeLaTeX Template. 
-%Developer: Someday（BUAA-SCSE）
-%Any advice? Please contact: somedayjiayi@163.com
-
 
 %********************代码部分********************
 
-\clearpage
-\section{第五章\ 代码片\ \ 程序员的最爱}
+\section{第四章\ 代码片\ \ 程序员的最爱}
 代码片永远是程序员的最爱，支持语法高亮，用法不妨百度。\\
 \lstset{language=C}
 \begin{lstlisting}
@@ -266,6 +246,35 @@ int main()
 \end{lstlisting}
 
 %********************代码部分********************
+
+\clearpage
+
+\section{第五章\ 未完待续}
+
+目前该模板基本可以应付日常论文写作需要，\par
+尤其是对于我航学子，你们看看这个模板，是不是似曾相识，（尤其是能不能过冯如杯格式审查）。\par
+限于精力，更多高级功能，请待作者再择良辰，Someday有朝一日还会回来。
+
+\section{第六章\ 模板更新记录}
+
+经123学长指正，Someday于2017.09.08进行一次重要更新，内容包括：\par
+1、对中文字号的设置命令进行了修改，使用方法不变。\par
+2、对仿宋字体所在的fontstyle进行了修改，以适应fontspec宏包。\par
+3、将取消首页页码的命令改为：pagenumbering\{gobble\} \par
+
+以上修正解决了以前版本中编译报错问题，当前版本在TeXLive2016环境下已经可以一次编译成功。 \par
+
+编译命令如下： \par
+cd\ <模板根目录> \par
+xelatex main.tex \par
+
+
+%Welcome! This is Someday's XeLaTeX Template. 
+%Developer: Someday（BUAA-SCSE）
+%Any advice? Please contact: somedayjiayi@163.com
+
+
+
 
 
 \end{document}

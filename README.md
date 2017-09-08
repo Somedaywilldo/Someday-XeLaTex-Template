@@ -138,3 +138,15 @@ main.tex的编译结果就是main.pdf，你可以先看看自己对这个结果�
 
 
 
+###UPDATE 2017.09.08
+
+经123学长指正，Someday于2017.09.08进行一次重要更新，内容包括：\par
+1、对中文字号的设置命令进行了修改，使用方法不变。\par
+2、对仿宋字体所在的fontstyle进行了修改，以适应fontspec宏包。\par
+3、将取消首页页码的命令改为：pagenumbering\{gobble\} \par
+
+以上修正解决了以前版本中编译报错问题，当前版本在TeXLive2016环境下已经可以一次编译成功。 \par
+
+编译命令如下： \par
+cd\ <模板根目录> \par
+xelatex main.tex \par
