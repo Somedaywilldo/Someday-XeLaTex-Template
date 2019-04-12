@@ -2,13 +2,14 @@
 %开发者：Someday（BUAA-SCSE）
 %维护: lawye(1874), nikkukun(1874)
 
-\documentclass{ctexart}
+\documentclass[zihao=-4]{ctexart}
 %********************导言区宏包引入********************
 \usepackage{xeCJK}
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{listings} %代码
 \usepackage{graphicx}
+\usepackage{multicol} %回车换段
 \usepackage{xcolor}
 \usepackage{geometry} %页面设置
 \usepackage{fontspec}
@@ -21,10 +22,13 @@
 \usepackage{gbt7714} %控制参考文献格式为国标
 %********************导言区宏包引入********************
 %********************第三方字体引入********************
-\setCJKmainfont[Path=fonts/,BoldFont=simhei.ttf,ItalicFont=simkai.ttf,SlantedFont=simfang.ttf]{simsun.ttc}
+%\setCJKmainfont[Path=fonts/,BoldFont=simhei.ttf,ItalicFont=simkai.ttf,SlantedFont=simfang.ttf]{simsun.ttc}
 %中文字体涵盖黑体、宋体、楷体、仿宋
 \setmainfont[Path=fonts/]{Times New Roman.ttf}
 \setmonofont[Path=fonts/]{Courier New.ttf}
+\setCJKfamilyfont{hwzs}[Path=fonts/]{STKzhongsong.ttf}%使用STZhogsong华文中宋字体
+\newcommand{\zhongsong}{\CJKfamily{hwzs}}
+
 %********************第三方字体引入********************
 
 
@@ -49,7 +53,7 @@
 \geometry{left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 %页边距
 %********************页边距设置********************
-
+%********************
 
 %欢迎来到：Someday's XeLaTeX Template
 %开发者：Someday（BUAA-SCSE）
@@ -64,23 +68,21 @@
 
 
 %********************标题格式设置********************
+\titleformat{\section}[block]{\LARGE\bfseries\centering}{\chinese{section}、}{1em}{}[]
+\titleformat{\subsection}[block]{\Large\itshape\mdseries}{（\chinese{subsection}）}{1em}{}[]
+\titleformat{\subsubsection}[block]{\normalsize\bfseries}{\arabic{subsubsection}、}{.5em}{}[]
+\titlespacing{\section}{0pt}{7.375pt}{7.375pt}
+\titlespacing{\subsection}{0pt}{7pt}{7pt}
+\titlespacing{\subsubsection}{0pt}{6pt}{6pt}
 %\setcounter{secnumdepth}{0}%该命令取消了章标题前数字label
-\CTEXsetup[name={,、},number={\chinese{section}}]{section}
-\CTEXsetup[name={（,）},number={\chinese{subsection}}]{subsection}
-\CTEXsetup[name={,、},number={subsubsection}]{subsubsection}
-
-
-
-\ctexset{
-    section={
-        fixskip = true,
-        aftertitle = \par
-    }
-}
+%\CTEXsetup[name={,、},number={\chinese{section}}]{section}
+%\CTEXsetup[name={（,）},number={\chinese{subsection}}]{subsection}
+%\CTEXsetup[name={,、},number={\arabic{subsubsection}}]{subsubsection}
 
 %\titleformat{\section}[block]{\LARGE\bfseries}{\chinese{section}、}{1em}{}[]
 %\titleformat{\subsection}[block]{\Large\itshape\mdseries}{（\chinese{subsection}）}{1em}{}[]
 %\titleformat{\subsubsection}[block]{\normalsize\arabic{subsubsection}、}{1em}{}[]
+
 %\titleformat{\paragraph}[block]{\small\bfseries}{\arabic{paragraph}、}{1em}{}[]
 %********************标题格式设置********************
 
@@ -90,8 +92,6 @@
 %*******************行间距段前段后*******************
 \linespread{1.8} %行间距为实际行间距乘以1.2,如此处实际为1.5倍行距
 \setlength{\parskip}{0.5\baselineskip}
-
-
 %*******************行间距段前段后*******************
 
 
@@ -111,10 +111,9 @@
 \par \ 
 
 \begin{center}
-    \erhao\textbf{本模板由北航计算机学院Someday开发} %黑体这样调用，其余字体同理
-    %格式控制部分
+    \erhao\zhongsong{本模板由北航计算机学院Someday开发}
     \par \ 
-    \erhao{本模板供所有用户免费使用，勿做商用}
+    \erhao\zhongsong{本模板供所有用户免费使用，勿做商用}
 \end{center}
 %格式控制部分
 \par \ 
@@ -145,8 +144,9 @@
 \xiaosi
 \section*{摘要}
 
-欢迎来到：Someday's XeLaTeX Template\par
-开发者：Someday（BUAA-SCSE）\par
+欢迎来到：Someday's XeLaTeX Template
+
+开发者：Someday（BUAA-SCSE）
 
 \newpage
 \section*{Abstract}
@@ -175,7 +175,7 @@
 
 \section{公式和中文字体\ \ 和谐共处}
 
-公式和中文字体和谐共处。\\
+公式和中文字体和谐共处。
 
 \subsection{LaTeX公式}
 
@@ -190,10 +190,15 @@ S=\iint\limits_{\Sigma}1 \ ds &= \int_0^{\pi}d\theta \int_0^{2\pi} r^2sin(\theta
 
 \subsection{中文字体设置}
 
-默认就是宋体。\par
-调用黑体：\textbf{黑体写在这里}\par
-调用楷体：\textit{楷体写在这里}\par
-调用仿宋：\textsl{仿宋写在这里}\par
+默认就是宋体。
+
+调用加粗宋体：\textbf{黑体写在这里}
+
+调用楷体：\textit{楷体写在这里}
+
+调用仿宋：\textsl{仿宋写在这里}
+
+调用黑体：\heiti{黑体写在这里}
 
 \subsection{对齐方式}
 
@@ -222,9 +227,11 @@ S=\iint\limits_{\Sigma}1 \ ds &= \int_0^{\pi}d\theta \int_0^{2\pi} r^2sin(\theta
 \subsection{图片}
 
 %********************图片部分********************
-\begin{center}
-\includegraphics[scale=0.4]{include_picture/picture.jpg}\par
-\end{center}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{include_picture/picture.jpg}
+    \caption{插入图片}
+\end{figure}
 %********************图片部分********************
 
 \subsection{引用Tex子文件}
@@ -306,12 +313,9 @@ xelatex main.tex \par
 
 lawye和nikkukun于2019.4.11开始维护该模板.
 
-\subsection{2019.4.11日更新记录}
-452
-
-\subsubsection[3]{123}
-
 本次更新基于\it{第二十九届“冯如杯”学生学术科技作品竞赛论文撰写格式规范}\cite{格式}
+
+\subsection{2019.4.11日更新记录}
 \begin{enumerate}
     \item 修改参考文献格式
 
