@@ -16,7 +16,7 @@
 \usepackage{fancyhdr} %页眉页脚
 \pagestyle{fancy}
 \usepackage{float} %表格位置
-\usepackage{titlesec}
+\usepackage{titlesec} %设置
 \usepackage{ctex}
 \usepackage{gbt7714} %控制参考文献格式为国标
 %********************导言区宏包引入********************
@@ -68,11 +68,31 @@
 \CTEXsetup[name={,、},number={\chinese{section}}]{section}
 \CTEXsetup[name={（,）},number={\chinese{subsection}}]{subsection}
 \CTEXsetup[name={,、},number={subsubsection}]{subsubsection}
+
+
+
+\ctexset{
+    section={
+        fixskip = true,
+        aftertitle = \par
+    }
+}
+
+%\titleformat{\section}[block]{\LARGE\bfseries}{\chinese{section}、}{1em}{}[]
+%\titleformat{\subsection}[block]{\Large\itshape\mdseries}{（\chinese{subsection}）}{1em}{}[]
+%\titleformat{\subsubsection}[block]{\normalsize\arabic{subsubsection}、}{1em}{}[]
+%\titleformat{\paragraph}[block]{\small\bfseries}{\arabic{paragraph}、}{1em}{}[]
 %********************标题格式设置********************
 
 %\setcounter{section}{-3}  %标题计数器
 %\stepcounter{section}
 
+%*******************行间距段前段后*******************
+\linespread{1.8} %行间距为实际行间距乘以1.2,如此处实际为1.5倍行距
+\setlength{\parskip}{0.5\baselineskip}
+
+
+%*******************行间距段前段后*******************
 
 
 
@@ -153,11 +173,11 @@
 \setcounter{page}{1} 
 
 
-\section{第一章\ 公式和中文字体\ \ 和谐共处}
+\section{公式和中文字体\ \ 和谐共处}
 
 公式和中文字体和谐共处。\\
 
-\subsection{第一节\ LaTeX公式}
+\subsection{LaTeX公式}
 
 %********************正文部分********************
 \begin{align*}
@@ -168,14 +188,14 @@ S=\iint\limits_{\Sigma}1 \ ds &= \int_0^{\pi}d\theta \int_0^{2\pi} r^2sin(\theta
 \end{align*}
 %********************正文部分********************
 
-\subsection{第二节\ 中文字体设置}
+\subsection{中文字体设置}
 
 默认就是宋体。\par
 调用黑体：\textbf{黑体写在这里}\par
 调用楷体：\textit{楷体写在这里}\par
 调用仿宋：\textsl{仿宋写在这里}\par
 
-\subsection{第三节\ 对齐方式}
+\subsection{对齐方式}
 
 
 %********************排版部分********************
@@ -195,11 +215,11 @@ S=\iint\limits_{\Sigma}1 \ ds &= \int_0^{\pi}d\theta \int_0^{2\pi} r^2sin(\theta
 %欢迎来到：Someday's XeLaTeX Template
 %开发者：Someday（BUAA-SCSE）
 
-\section{第二章\ 图片与TeX子文件\ \ 信手拈来}
+\section{图片与TeX子文件\ \ 信手拈来}
 
 图片与TeX子文件信手拈来。
 
-\subsection{第一节\ 图片}
+\subsection{图片}
 
 %********************图片部分********************
 \begin{center}
@@ -207,7 +227,7 @@ S=\iint\limits_{\Sigma}1 \ ds &= \int_0^{\pi}d\theta \int_0^{2\pi} r^2sin(\theta
 \end{center}
 %********************图片部分********************
 
-\subsection{第二节\ 引用Tex子文件}
+\subsection{引用Tex子文件}
 
 
 %********************引用Tex子文件部分********************
@@ -220,11 +240,11 @@ S=\iint\limits_{\Sigma}1 \ ds &= \int_0^{\pi}d\theta \int_0^{2\pi} r^2sin(\theta
 
 
 \clearpage
-\section{第三章\ 表格\ \ 提升逼格}
+\section{表格\ \ 提升逼格}
 
 搞科研怎么能没有表格？\\
 
-\subsection{第一节\ 表格}
+\subsection{表格}
 
 %********************表格部分********************
 关于表格的各种样式，请使用百度大法。\\
@@ -244,7 +264,7 @@ Start & End  & Character Block Name \\
 
 %********************代码部分********************
 
-\section{第四章\ 代码片\ \ 程序员的最爱}
+\section{代码片\ \ 程序员的最爱}
 代码片永远是程序员的最爱，支持语法高亮，用法不妨百度。\\
 \lstset{language=C}
 \begin{lstlisting}
@@ -260,13 +280,13 @@ int main()
 
 \clearpage
 
-\section{第五章\ 未完待续}
+\section{未完待续}
 
 目前该模板基本可以应付日常论文写作需要，\par
 尤其是对于我航学子，你们看看这个模板，是不是似曾相识，（尤其是能不能过冯如杯格式审查）。\par
 限于精力，更多高级功能，请待作者再择良辰，Someday有朝一日还会回来。
 
-\section{第六章\ 模板更新记录}
+\section{模板更新记录}
 
 经123学长指正，Someday于2017.09.08进行一次重要更新，内容包括：\par
 1、对中文字号的设置命令进行了修改，使用方法不变。\par
@@ -282,11 +302,15 @@ xelatex main.tex \par
 \par \ 
 \par \ 
 
-\section{第七章\ 模板新的更新记录}
+\section{模板新的更新记录}
 
 lawye和nikkukun于2019.4.11开始维护该模板.
 
 \subsection{2019.4.11日更新记录}
+452
+
+\subsubsection[3]{123}
+
 本次更新基于\it{第二十九届“冯如杯”学生学术科技作品竞赛论文撰写格式规范}\cite{格式}
 \begin{enumerate}
     \item 修改参考文献格式
