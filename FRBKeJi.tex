@@ -13,6 +13,7 @@
 \usepackage{xcolor}
 \usepackage{geometry} %页面设置
 \usepackage{fontspec}
+\usepackage{setspace}
 \usepackage{times}
 \usepackage{fancyhdr} %页眉页脚
 \pagestyle{fancy}
@@ -39,12 +40,12 @@
 \newcommand{\yihao}{\fontsize{28pt}{0}}
 \newcommand{\erhao}{\fontsize{21pt}{0}}
 \newcommand{\xiaoer}{\fontsize{18pt}{0}}
-\newcommand{\sanhao}{\fontsize{15.75pt}{0}}
+\newcommand{\sanhao}{\fontsize{16pt}{0}}
 \newcommand{\sihao}{\fontsize{14pt}{0}}
 \newcommand{\xiaosi}{\fontsize{12pt}{0}}
 \newcommand{\wuhao}{\fontsize{10.5pt}{0}}
 \newcommand{\xiaowu}{\fontsize{9pt}{0}}
-\newcommand{\liuhao}{\fontsize{7.875pt}{0}}
+\newcommand{\liuhao}{\fontsize{8pt}{0}}
 \newcommand{\qihao}{\fontsize{5.25pt}{0}}
 %********************中文字号设置********************
 
@@ -71,9 +72,9 @@
 \titleformat{\section}[block]{\LARGE\bfseries\centering}{\chinese{section}、}{1em}{}[]
 \titleformat{\subsection}[block]{\Large\itshape\mdseries}{（\chinese{subsection}）}{1em}{}[]
 \titleformat{\subsubsection}[block]{\normalsize\bfseries}{\arabic{subsubsection}、}{.5em}{}[]
-\titlespacing{\section}{0pt}{7.375pt}{7.375pt}
-\titlespacing{\subsection}{0pt}{7pt}{7pt}
-\titlespacing{\subsubsection}{0pt}{6pt}{6pt}
+\titlespacing{\section}{0pt}{24pt}{8pt}
+\titlespacing{\subsection}{0pt}{21pt}{7pt}
+\titlespacing{\subsubsection}{0pt}{18pt}{6pt}
 %\setcounter{secnumdepth}{0}%该命令取消了章标题前数字label
 %\CTEXsetup[name={,、},number={\chinese{section}}]{section}
 %\CTEXsetup[name={（,）},number={\chinese{subsection}}]{subsection}
@@ -106,20 +107,19 @@
 \includegraphics[scale=1]{include_picture/xiaoming.png}
 \end{center}
 %格式控制部分
-\par \ 
-\par \ 
-\par \ 
 
-\begin{center}
-    \erhao\zhongsong{本模板由北航计算机学院Someday开发}
-    \par \ 
-    \erhao\zhongsong{本模板供所有用户免费使用，勿做商用}
-\end{center}
+\begin{spacing}{3}
+    \erhao
+    \begin{center}
+        \zhongsong\erhao{第二十九届“冯如杯”学生学术科技作品竞赛论文} %黑体这样调用，其余字体同理
+
+        \zhongsong{本模板由北航计算机学院Someday开发}
+        
+        \zhongsong{本模板供所有用户免费使用，勿做商用}
+    \end{center}
+\end{spacing}
 %格式控制部分
 \par \ 
-\par \ 
-\par \ 
-
 \begin{center}
     \sihao
     \textbf{学院：计算机学院}
@@ -131,7 +131,7 @@
 \par \ 
 \par \  
 \sanhao
-\centerline{\textbf{二〇一七年七月}}
+\centerline{\heiti{二〇一九年四月}}
 
 \pagenumbering{gobble} %封面无页码
 %\thispagestyle{empty}
