@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
+  \urlstyle{same}\fi
+\providecommand{\href}[2]{\url{#2}}
+\providecommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
+
+\bibitem[“冯如杯”竞赛组委会()]{格式}
+“冯如杯”竞赛组委会.
+\newblock
+  第二十九届“冯如杯”学生学术科技作品竞赛论文撰写格式规范\allowbreak[EB/OL].
+\newblock \url{https://github.com/Somedaywilldo/Someday-XeLaTex-Template}.
+
+\end{thebibliography}
