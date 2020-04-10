@@ -1,0 +1,51 @@
+
+%********************封面部分********************
+\includegraphics[scale=1]{include_picture/xiaohui.png}
+%格式控制部分
+\par \  
+\par \ 
+\par \ 
+\begin{center}
+\includegraphics[scale=1]{include_picture/xiaoming.png}
+\end{center}
+%格式控制部分
+
+% spacing 是上下间距
+\begin{spacing}{2}
+    \erhao
+    \begin{center}
+        \zhongsong\erhao{大标题} %黑体这样调用，其余字体同理        
+    \end{center}
+    \begin{flushright}
+        \xinwei\sanhao {——小标题}
+    \end{flushright}
+\end{spacing}
+
+%格式控制部分
+\par \ 
+\begin{center}
+    \sihao
+    % \textbf{学院：微电子学院}
+    \par \ 
+    % \textbf{作者：范云潜}
+    \par \
+    % \textbf{学号：18373486}
+    \par \
+    % \textbf{序号：134}
+\end{center}
+
+%格式控制部分
+\par \ 
+\par \  
+\begin{center}    
+    \sanhao
+    \centerline{\heiti{二〇二〇年五月}}
+\end{center}
+
+\pagenumbering{gobble} %封面无页码
+%\thispagestyle{empty}
+
+
+\renewcommand{\headrulewidth}{0pt}%没有页眉装饰线
+% \newpage
+\clearpage
