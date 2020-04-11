@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}
+\providecommand{\bibauthor}[1]{#1}
+\providecommand{\bibeditor}[1]{#1}
+\providecommand{\bibtranslator}[1]{#1}
+\providecommand{\bibtitle}[1]{#1}
+\providecommand{\bibbooktitle}[1]{#1}
+\providecommand{\bibjournal}[1]{#1}
+\providecommand{\bibmark}[1]{#1}
+\providecommand{\bibcountry}[1]{#1}
+\providecommand{\bibpatentid}[1]{#1}
+\providecommand{\bibedition}[1]{#1}
+\providecommand{\biborganization}[1]{#1}
+\providecommand{\bibaddress}[1]{#1}
+\providecommand{\bibpublisher}[1]{#1}
+\providecommand{\bibinstitution}[1]{#1}
+\providecommand{\bibschool}[1]{#1}
+\providecommand{\bibvolume}[1]{#1}
+\providecommand{\bibnumber}[1]{#1}
+\providecommand{\bibpages}[1]{#1}
+\providecommand{\bibmodifydate}[1]{#1}
+\providecommand{\bibcitedate}[1]{#1}
+\providecommand{\bibyear}[1]{#1}
+\providecommand{\bibdate}[1]{#1}
+\providecommand{\biburl}[1]{\url{#1}}
+
+\bibitem{格式}
+\bibauthor{“冯如杯”竞赛组委会}\@.
+  \bibtitle{第二十九届“冯如杯”学生学术科技作品竞赛论文撰写格式规范}\bibmark{[EB]}\@.
+  \@. \url{https://github.com/Somedaywilldo/Someday-XeLaTex-Template}\@.
+
+\bibitem{ghostnet}
+\bibauthor{HAN K\@, WANG Y\@, TIAN Q, et~al}\@. \bibtitle{GhostNet: More
+  Features from Cheap Operations}\bibmark{[C]}\bibeditor{}\@.
+  \bibbooktitle{CVPR}\@. \bibyear{2020}\@.
+
+\end{thebibliography}
