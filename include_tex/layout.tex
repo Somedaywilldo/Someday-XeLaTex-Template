@@ -7,13 +7,13 @@
 
 %********************标题格式设置********************
 \titleformat{\section}[block]{\LARGE\bfseries\centering}{\chinese{section}、}{1em}{}[]
-\titleformat{\subsection}[block]{\Large\itshape\mdseries}{（\chinese{subsection}）}{1em}{}[]
+% \titleformat{\subsection}[block]{\Large\itshape\mdseries}{（\chinese{subsection}）}{1em}{}[]
 \titleformat{\subsubsection}[block]{\normalsize\bfseries}{\arabic{subsubsection}、}{.5em}{}[]
 %\titlespacing{\section}{0pt}{24pt}{8pt}
 %\titlespacing{\subsection}{0pt}{21pt}{7pt}
 %\titlespacing{\subsubsection}{0pt}{18pt}{6pt}
 %\setcounter{secnumdepth}{0}%该命令取消了章标题前数字label
-%\CTEXsetup[name={,、},number={\chinese{section}}]{section}
+%\[name={,、},number={\chinese{section}}]{section}
 %\CTEXsetup[name={（,）},number={\chinese{subsection}}]{subsection}
 %\CTEXsetup[name={,、},number={\arabic{subsubsection}}]{subsubsection}
 
@@ -24,12 +24,12 @@
 %\titleformat{\paragraph}[block]{\small\bfseries}{\arabic{paragraph}、}{1em}{}[]
 
 
-\CTEXsetup[name={,、},number={\chinese{section}}]{section}
-\CTEXsetup[name={（,）},number={\chinese{subsection}}]{subsection}
-\CTEXsetup[name={,、},number={\arabic{subsubsection}}]{subsubsection}
-\titleformat{\section}[block]{\sanhao\bfseries\centering}{\chinese{section}、}{0pt}{}[]
-\titleformat{\subsection}[block]{\sihao\bfseries}{（\chinese{subsection}）}{0pt}{}[]
-\titleformat{\subsubsection}[block]{\xiaosi\bfseries}{\arabic{subsubsection}、}{0pt}{}[]
+\CTEXsetup[name={第,章},number={\chinese{section}}]{section}
+% \CTEXsetup[name={,},number={\arabic{subsection}}]{subsection}
+% \CTEXsetup[name={,、},number={\arabic{subsubsection}}]{subsubsection}
+\titleformat{\section}[block]{\sanhao\bfseries\centering}{第\chinese{section}章\ }{0pt}{}[]
+\titleformat{\subsection}[block]{\sihao\bfseries}{\arabic{section}.\arabic{subsection}\ }{0pt}{}[]
+\titleformat{\subsubsection}[block]{\xiaosi\bfseries}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}\ }{0pt}{}[]
 \titlespacing{\section}{0pt}{25pt}{12pt}
 \titlespacing{\subsection}{0pt}{7pt}{7pt}
 \titlespacing{\subsubsection}{0pt}{5pt}{4pt}
