@@ -1,0 +1,59 @@
+
+%********************页眉页脚设置********************
+\lhead{}%设置左页眉为空
+\rhead{}%设置左页眉为空
+%********************页眉页脚设置********************
+
+
+%********************标题格式设置********************
+\titleformat{\section}[block]{\LARGE\bfseries\centering}{\chinese{section}、}{1em}{}[]
+% \titleformat{\subsection}[block]{\Large\itshape\mdseries}{（\chinese{subsection}）}{1em}{}[]
+\titleformat{\subsubsection}[block]{\normalsize\bfseries}{\arabic{subsubsection}、}{.5em}{}[]
+%\titlespacing{\section}{0pt}{24pt}{8pt}
+%\titlespacing{\subsection}{0pt}{21pt}{7pt}
+%\titlespacing{\subsubsection}{0pt}{18pt}{6pt}
+%\setcounter{secnumdepth}{0}%该命令取消了章标题前数字label
+%\[name={,、},number={\chinese{section}}]{section}
+%\CTEXsetup[name={（,）},number={\chinese{subsection}}]{subsection}
+%\CTEXsetup[name={,、},number={\arabic{subsubsection}}]{subsubsection}
+
+%\titleformat{\section}[block]{\LARGE\bfseries}{\chinese{section}、}{1em}{}[]
+%\titleformat{\subsection}[block]{\Large\itshape\mdseries}{（\chinese{subsection}）}{1em}{}[]
+%\titleformat{\subsubsection}[block]{\normalsize\arabic{subsubsection}、}{1em}{}[]
+
+%\titleformat{\paragraph}[block]{\small\bfseries}{\arabic{paragraph}、}{1em}{}[]
+
+
+\CTEXsetup[name={第,章},number={\chinese{section}}]{section}
+% \CTEXsetup[name={,},number={\arabic{subsection}}]{subsection}
+% \CTEXsetup[name={,、},number={\arabic{subsubsection}}]{subsubsection}
+\titleformat{\section}[block]{\sanhao\bfseries\centering}{第\chinese{section}章\ }{0pt}{}[]
+\titleformat{\subsection}[block]{\sihao\bfseries}{\arabic{section}.\arabic{subsection}\ }{0pt}{}[]
+\titleformat{\subsubsection}[block]{\xiaosi\bfseries}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}\ }{0pt}{}[]
+\titlespacing{\section}{0pt}{25pt}{12pt}
+\titlespacing{\subsection}{0pt}{7pt}{7pt}
+\titlespacing{\subsubsection}{0pt}{5pt}{4pt}
+
+\titlecontents{section}[1.6em]{\addvspace{2pt}\filright}
+{\contentspush{\thecontentslabel\hspace{0.8em}}}
+{}{\titlerule*[8pt]{.}\contentspage}
+
+\titlecontents{subsection}[3.2em]{\addvspace{2pt}\filright}
+{\contentspush{\thecontentslabel\hspace{0.8em}}}
+{}{\titlerule*[8pt]{.}\contentspage}
+
+\titlecontents{subsubsection}[6.4em]{\addvspace{2pt}\filright}
+{\contentspush{\thecontentslabel\hspace{0.8em}}}
+{}{\titlerule*[8pt]{.}\contentspage}
+
+% \titleformat*{\section}{}
+%********************标题格式设置********************
+
+%\setcounter{section}{-3}  %标题计数器
+%\stepcounter{section}
+
+
+%*******************行间距段前段后*******************
+\linespread{1.8} %行间距为实际行间距乘以1.2,如此处实际为1.5倍行距
+\setlength{\parskip}{0.5\baselineskip}
+%*******************行间距段前段后*******************
